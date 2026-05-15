@@ -18,7 +18,7 @@ class circleArea{
     }
 
     Area() {
-        return `The area is ${this.radius * 3.1415 * this.radius}`;
+        return `The Area is ${this.radius * 3.1415 * this.radius}`;
     }
 }
 
