@@ -9,6 +9,15 @@ let people = [{name : "Krutarth" ,age : 19, gpa : 8.04 },
               {name : "Tanay" ,age : 20, gpa : 7.26 }
 ]
 
-people.sort( (a,b)=> b.gpa - a.gpa);
+//people.sort( (a,b)=> b.gpa - a.gpa);
+
+
+
+people.sort((a,b) => a.name.localeCompare(b.name));
+
+
+
+//people.sort( (a,b)=> b.age - a.age);
 
 console.log(people);
+
