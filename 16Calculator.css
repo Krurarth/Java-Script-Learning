@@ -8,7 +8,7 @@ body{
 
 #calculator{
     width: 320px;
-    background-color: hsl(163, 99%, 60%);
+    background-color: hsl(163, 99%, 50%);
     border-radius: 15px;
     border: solid hsl(0, 0%, 70%);
 }
@@ -52,9 +52,13 @@ button:active{
     width: 300px;
     height: 50px;
     margin: 7px;
-    background-color: hsl(34, 78%, 98%);
-    color: hsl(240, 1%, 26%);
+    background-color: hsl(0, 1%, 16%);
+    color: hsl(240, 100%, 88%);
     border-radius: 10px;
-    
+    font-size: 2.5rem;
+    text-align: right;
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
 }
 
