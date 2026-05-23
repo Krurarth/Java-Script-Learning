@@ -8,8 +8,17 @@ body{
 
 #calculator{
     width: 320px;
-    background-color: hsl(163, 99%, 80%);
+    background-color: hsl(163, 99%, 60%);
     border-radius: 15px;
+    border: solid hsl(0, 0%, 70%);
+}
+
+.operator{
+    background-color:hsla(283, 100%, 50%, 0.851);
+}
+
+.operator :hover{
+    background-color: burlywood;
 }
 
 button{
@@ -43,11 +52,9 @@ button:active{
     width: 300px;
     height: 50px;
     margin: 7px;
-    background-color: antiquewhite;
+    background-color: hsl(34, 78%, 98%);
     color: hsl(240, 1%, 26%);
     border-radius: 10px;
+    
 }
 
-.operator{
-    background-color:hsl(319, 100%, 50%);
-}
