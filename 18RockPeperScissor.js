@@ -9,7 +9,11 @@ function value(playerChoice){
     let result="";
 
     switch(computerChoice){
-        case 'stone' : 
+        case 'stone' : computerChoice.textContent = `Stone🤜`; break;
+
+        case 'paper' : computerChoice.textContent = `Paper🖐️`; break;
+
+        case 'scissor' : computerChoice.textContent = `Scissor ✂️`; break;
     }
 
     if(playerChoice === computerChoice){
@@ -28,5 +32,5 @@ function value(playerChoice){
         }
     }
 
-    result.text-Content = result;
+    result.textContent = result;
 }
