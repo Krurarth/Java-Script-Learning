@@ -1,36 +1,55 @@
+const playerDisplay = document.getElementById("playerDisplay");
+const computerDisplay = document.getElementById("computerDisplay");
+const resultDisplay = document.getElementById("resultDisplay");
+const playerCount = document.getElementById("pWin");
+const computerCount = document.getElementById("cWin");
+let playerScore = 0;
+let computerScore = 0;
 
-const choices = ["stone" , "paper" , "scissor"];
-const playerChoice = document.getElementById("playerChoice");
-const computerChoice = document.getElementById("computerChoice");
-const resultDisplay = document.getElementById("result");
 
-function value(playerChoice){ 
+const choices = ["stone", "paper", "scissor"];
+
+function playGame (playerChoice){
+
     const computerChoice = choices[Math.floor(Math.random()*3)];
-    let result="";
 
     switch(computerChoice){
-        case 'stone' : computerChoice.textContent = `Stone🤜`; break;
-
-        case 'paper' : computerChoice.textContent = `Paper🖐️`; break;
-
-        case 'scissor' : computerChoice.textContent = `Scissor ✂️`; break;
+        case 'stone' : computerDisplay.textContent = `COMPUTER  : Stone🤜`; break;
+        case 'paper' : computerDisplay.textContent = `COMPUTER  : Paper🖐️`; break;
+        case 'scissor' : computerDisplay.textContent = `COMPUTER  : Scissor ✂️`; break;
     }
+
+    switch(playerChoice){
+        case 'stone' : playerDisplay.textContent = `PLAYER : Stone🤜`; break;
+        case 'paper' : playerDisplay.textContent = `PLAYER : Paper🖐️`; break;
+        case 'scissor' : playerDisplay.textContent = `PLAYER : Scissor ✂️`; break;
+    }
+
+    let result = "";
 
     if(playerChoice === computerChoice){
-        result = `IT'S A TIE !`
+        result = "IT'S A TIE.";
     }
-    else {
+    else{
         switch(playerChoice){
-            case 'paper' : (computerChoice == 'scissor')? result = `You lose!` : result = `You win!` ;
-            break;
-
-            case 'scissor' : (computerChoice == 'stone')? result = `You lose!` : result = `You win!` ;
-            break;
-
-            case 'stone' : (computerChoice == 'paper') ? result = `You lose!` : result = `You win!` ;
-            break;
+            case 'stone' : result = (computerChoice === 'paper') ? "YOU LOSE." : "YOU WIN."; break;
+            case 'paper' : result = (computerChoice === 'scissor') ? "YOU LOSE." : "YOU WIN."; break;
+            case 'scissor' : result = (computerChoice === 'stone') ? "YOU LOSE." : "YOU WIN."; break;
         }
     }
 
-    result.textContent = result;
+    resultDisplay.textContent = result;
+
+    resultDisplay.classList.remove("green" , "red");
+
+    if(result === "YOU WIN."){
+        resultDisplay.classList.add("green");
+        playerScore++;
+        playerCount.textContent = playerScore;
+    }
+    else if(result === "YOU LOSE."){
+        resultDisplay.classList.add("red");
+        computerScore++;
+        computerCount.textContent = computerScore;
+    }
 }

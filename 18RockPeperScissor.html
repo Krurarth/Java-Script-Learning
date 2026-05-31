@@ -8,25 +8,30 @@
 </head>
 
 <body>
-        <h1>ROCK PAPER SCCISOR</h1>
+        <h1>ROCK PAPER SCISSOR</h1>
 
     <div>
         <p>Enter your choice ...</p>
         <div id="myBox">
             
              
-             <button  class="tag" onclick="value('scissor')">Scissor ✂️</button>
-             <button  class="tag" onclick="value('paper')">Paper🖐️</button>
-             <button  class="tag" onclick="value('stone')">Stone🤜</button>
+             <button  class="tag" onclick="playGame('scissor')">Scissor ✂️</button>
+             <button  class="tag" onclick="playGame('paper')">Paper🖐️</button>
+             <button  class="tag" onclick="playGame('stone')">Stone🤜</button>
         </div>
 
-        <p id="playerChoice">Lorem ipsum dolor sit amet</p>
+        <p id="playerDisplay">Player Choice :</p>
 
         <div id="myBox2">
-            <p class="tag" id="computerChoice" ></p>
+            <p  id="computerDisplay" >Computer Choice :</p>
         </div>
 
-        <h1 id="result">Lorem ipsum dolor sit.</h1>
+        <p id="resultDisplay">Result :</p>
+    </div>
+
+    <div id="myBox3">
+        Player win count : <span id="pWin">0</span> <br>
+        Computer win count : <span id="cWin">0</span>
     </div>
 <script src="18RockPeperScissor.js"></script>
 </body>
