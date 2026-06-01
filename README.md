@@ -7,4 +7,4 @@ Code repo for learning java script
 23/05/2026 : Built the calculator.
 24/05/2026 : Learned about event litsners of mouse and keyborad.
 25/05/2026 : Build rock paper scieser html and css on my own, Doing that learnt about flex property, Also learne about hover transition of the buttons.
-01/06/2026 : 
+01/06/2026 : Build rock paper scissor game completely.
