@@ -53,4 +53,5 @@ function takeOutTrash(){
 
 walkDog().then(value => {console.log(value); return cleanKichen();})
          .then(value => {console.log(value); return takeOutTrash();})
-         .then(value => {console.log(value)});
+         .then(value => {console.log(value)})
+         .catch(error => console.error(error));
