@@ -1,0 +1,17 @@
+[{
+    "name" : "Krutarth",
+    "age" : 19,
+    "isStudent" : true
+},
+
+{
+    "name" : "Krisha",
+    "age" : 22,
+    "isStudent" : true
+},
+
+{
+    "name" : "Hina",
+    "age" : 44,
+    "isStudent" : false
+}]
